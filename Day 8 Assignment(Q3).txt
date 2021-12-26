@@ -1,0 +1,76 @@
+Day 8 Assignment:
+
+3. Write a “person” class to hold all the details.
+
+Solution:
+
+class Person
+{
+    constructor(Full_Name,Age,Gender,City,State,Phn_number,Email){
+        this.Full_Name=Full_Name;
+        this.Age=Age;
+        this.Gender=Gender;
+        this.City=City;
+        this.State=State;
+        this.Phn_number=Phn_number;
+        this.Email=Email;
+}
+getFull_Name()
+{
+    console.log(`Name: ${this.Full_Name}`);
+
+}
+getAge()
+{
+    console.log(`Age: ${this.Age}`);
+
+}
+getGender()
+{
+    console.log(`Gender: ${this.Gender}`);
+
+}
+getCity()
+{
+    console.log(`City: ${this.City}`);
+
+}
+getState()
+{
+    console.log(`State: ${this.State}`);
+
+}
+getPhn_number()
+{
+    console.log(`Phone Number: ${this.Phn_number}`);
+
+}
+getEmail()
+{
+    console.log(`Email: ${this.Email}`);
+
+}
+}
+let data=new Person("Savitha V",21,"Female","Bangalore","Karnataka","+91 9123456809","savitha13@gmail.com");
+
+data.getFull_Name();
+data.getAge();
+data.getGender();
+data.getCity();
+data.getState();
+data.getPhn_number();
+data.getEmail();
+
+Output:
+
+Name: Savitha V
+Age: 21
+Gender: Female
+
+City: Bangalore
+
+State: Karnataka
+
+Phone Number: +91 9123456809
+
+Email: savitha13@gmail.com

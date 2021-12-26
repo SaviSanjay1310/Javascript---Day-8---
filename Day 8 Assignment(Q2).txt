@@ -1,0 +1,49 @@
+Day 8 Assignment:
+
+2. https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+Solution:
+
+class Circle {
+    constructor(radius,colour) {
+        this.radius=radius;
+        this.colour=colour;
+    }
+
+getRadius()
+{
+    console.log(`The Radius of the Circle is: ${this.radius}`);
+
+}
+getColour()
+{
+    console.log(`The Colour of the Circle is: ${this.colour}`);
+}
+getArea()
+{
+    const pi=3.14;
+    console.log(`The Area of the Circle is:${pi*(this.radius*this.radius)}`)
+}
+getCircum()
+{
+    const pi=3.14;
+    console.log(`The Circumference of the Circle:${2*pi*this.radius}`)
+}
+}
+
+let data = new Circle(1.0,"red");
+
+data.getRadius();
+data.getColour();
+data.getArea();
+data.getCircum();
+
+Output:
+
+The Radius of the Circle is: 1
+
+The Colour of the Circle is: red
+
+The Area of the Circle is:3.14
+ 
+The Circumference of the Circle:6.28

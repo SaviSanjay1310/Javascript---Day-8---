@@ -1,0 +1,37 @@
+Day 8 Assignment:
+
+4. Write a class to calculate uber price.
+
+Solution:
+
+class Uber
+{
+    constructor(Basefare,Costpermile,Costperminute,Timeinride,Ridedistance,Bookingfee){
+        {
+            this.Basefare=Basefare;
+            this.Costpermile=Costpermile;
+            this.Costperminute=Costperminute;
+            this.Timeinride=Timeinride;
+            this.Ridedistance=Ridedistance;
+            this.Bookingfee=Bookingfee;
+        }
+    }
+    Myfare()
+    {
+        console.log(`Your fare is : ${this.Basefare+((this.Costperminute*this.Timeinride)+(this.Costpermile*this.Ridedistance))+this.Bookingfee} 
+    Happy Riding.`);
+    }
+}
+let ride = new Uber(35,9,5,25,20,450);
+ride.Myfare();
+
+
+Output:
+
+Your fare is : 790 
+  
+  Happy Riding.
+
+
+Reference: https://boobo94.github.io/research/uber-costs/
+
